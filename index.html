@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shiba Makeup | Beauty & Makeup Artist</title>
+ <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-icon"><i class="fas fa-spa"></i></span>
+      <span>Shiba <em>Makeup</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#appointment">Book Now</a></li>
+    </ul>
+    <button class="book-btn" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+      <i class="fas fa-calendar-heart"></i> Book Now
+    </button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-bg-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-text" data-aos="fadeLeft">
+      <span class="hero-eyebrow">✦ Professional Beauty Artist</span>
+      <h1 class="hero-title">
+        Where Beauty<br/>
+        Meets <em class="gradient-text">Artistry</em>
+      </h1>
+      <p class="hero-subtitle">
+        Transform yourself with premium beauty services — from luxurious facials & hair treatments to bridal makeup & waxing. Your glow is our passion.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Happy Clients</span></div>
+        <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Rated Service</span></div>
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+      </div>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+          <i class="fas fa-sparkles"></i> Book Appointment
+        </button>
+        <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          View Services <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="hero-visual" data-aos="fadeRight">
+      <div class="hero-image-container">
+        <div class="orbit-ring ring1">
+          <div class="orbit-item item1"><i class="fas fa-star"></i></div>
+          <div class="orbit-item item2"><i class="fas fa-heart"></i></div>
+          <div class="orbit-item item3"><i class="fas fa-gem"></i></div>
+          <div class="orbit-item item4"><i class="fas fa-spa"></i></div>
+        </div>
+        <div class="orbit-ring ring2">
+          <div class="orbit-badge badge1">💄 Makeup</div>
+          <div class="orbit-badge badge2">✨ Glow</div>
+          <div class="orbit-badge badge3">💅 Beauty</div>
+        </div>
+        <div class="artist-circle">
+          <img src="istockphoto-1316127257-612x612.jpg" alt="Makeup Artist"/>
+          <div class="circle-glow"></div>
+        </div>
+        <div class="floating-card card-top">
+          <i class="fas fa-check-circle"></i>
+          <span>Available For You</span>
+        </div>
+        <div class="floating-card card-bottom">
+          <i class="fas fa-users"></i>
+          <span>100+ Happy Clients</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-side" data-aos="fadeLeft">
+        <div class="about-img-wrap">
+          <div class="about-orbit">
+            <div class="ao-ring ring-a">
+              <div class="ao-dot d1"></div>
+              <div class="ao-dot d2"></div>
+              <div class="ao-dot d3"></div>
+            </div>
+            <div class="ao-ring ring-b">
+              <div class="ao-dot d4"></div>
+              <div class="ao-dot d5"></div>
+            </div>
+          </div>
+          <div class="about-circle-img"> 
+
+            <!-- client ki image  -->
+            <img src="WhatsApp Image 2026-06-12 at 12.18.10 PM.jpeg" alt="At work"/>
+          </div>
+          <div class="about-badge avail-badge">
+            <span class="avail-dot"></span>
+            <span>Available For You</span>
+          </div>
+          <div class="about-badge client-badge">
+            <i class="fas fa-heart"></i>
+            <span>100+ Clients Happy</span>
+          </div>
+          <div class="about-badge exp-badge">
+            <i class="fas fa-award"></i>
+            <span>3+ Years Expert</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text-side" data-aos="fadeRight">
+        <span class="section-eyebrow">✦ About The Artist</span>
+        <h2 class="section-title">Passion for <em>Perfect</em> Beauty</h2>
+        <p class="about-desc">
+          Hi, I'm a professional beauty and makeup artist with over 3 years of hands-on experience transforming clients with confidence and care. My studio is a sanctuary where every client is treated like royalty.
+        </p>
+        <p class="about-desc">
+          I specialize in a full range of beauty services — from Brazilian wax, luxurious facials, and advanced hair treatments like Nano-Plastia and Keratin, to precision haircuts and global hair coloring. My goal? To make you feel your most beautiful, authentic self.
+        </p>
+        <div class="about-features">
+          <div class="af-item"><i class="fas fa-check"></i> Certified Beauty Professional</div>
+          <div class="af-item"><i class="fas fa-check"></i> Premium Products Only</div>
+          <div class="af-item"><i class="fas fa-check"></i> Hygienic & Safe Environment</div>
+          <div class="af-item"><i class="fas fa-check"></i> Personalized Care For Every Client</div>
+        </div>
+        <button class="btn-primary" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+          <i class="fas fa-calendar-check"></i> Book Your Session
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section-header" data-aos="fadeUp">
+      <span class="section-eyebrow">✦ Our Services</span>
+      <h2 class="section-title">Premium Beauty <em>Menu</em></h2>
+      <p class="section-sub">From hair to skin, we offer a curated range of professional beauty services.</p>
+    </div>
+    <div class="services-tabs" data-aos="fadeUp">
+      <button class="tab-btn active" data-tab="waxing">Waxing & Threading</button>
+      <button class="tab-btn" data-tab="hair">Hair Services</button>
+      <button class="tab-btn" data-tab="beauty">Beauty & Skin</button>
+      <button class="tab-btn" data-tab="nails">Nails & More</button>
+    </div>
+
+    <div class="service-panel active" id="tab-waxing" data-aos="fadeUp">
+      <div class="services-grid">
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-leaf"></i></div><h3>Brazilian Wax</h3><p>Professional Brazilian waxing with gentle, skin-safe products.</p><span class="price">₹400</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-eye"></i></div><h3>Threading — Upperlips & Forehead</h3><p>Precision threading for clean, defined brows and smooth skin.</p><span class="price">₹90</span></div>
+        <div class="service-card featured"><div class="sc-badge">Popular</div><div class="sc-icon"><i class="fas fa-fire"></i></div><h3>Rica Wax — Full Arms + Full Leg</h3><p>Premium Rica wax for smooth, long-lasting results.</p><span class="price">₹1100</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-fire-alt"></i></div><h3>Rica Wax — Half Leg + Full Arms</h3><p>Rica wax for arms and half leg combo.</p><span class="price">₹900</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-wind"></i></div><h3>Normal Wax — Full Arms + Full Leg</h3><p>Gentle normal wax for full arms and legs.</p><span class="price">₹750</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-wind"></i></div><h3>Normal Wax — Half Leg + Full Arms</h3><p>Normal wax for combo half leg and arms.</p><span class="price">₹550</span></div>
+      </div>
+    </div>
+
+    <div class="service-panel" id="tab-hair">
+      <div class="services-grid">
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-cut"></i></div><h3>Men's Haircut</h3><p>Stylish, precision cuts for men.</p><span class="price">₹100</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-baby"></i></div><h3>Baby Girl Cut</h3><p>Gentle, cute haircuts for little girls.</p><span class="price">₹200</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-user-tie"></i></div><h3>Beard & Shave</h3><p>Clean beard shaping and smooth shave.</p><span class="price">₹70</span></div>
+        <div class="service-card featured"><div class="sc-badge">Trending</div><div class="sc-icon"><i class="fas fa-scissors"></i></div><h3>Girls Haircut (All Styles)</h3><p>Layers, Feather, Butterfly, Bob, Step, Multilayers, Laser Cut and more.</p><span class="price">As per style</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-palette"></i></div><h3>Global Color</h3><p>Full global hair coloring with premium brands.</p><span class="price">₹4000 – ₹7000</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-brush"></i></div><h3>Highlights</h3><p>Trendy highlight techniques for every look.</p><span class="price">On consultation</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-sync"></i></div><h3>Root Touch Up</h3><p>Fresh root touch-up for seamless color.</p><span class="price">₹1200</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-spa"></i></div><h3>Hair Spa</h3><p>Deep nourishing hair spa treatment.</p><span class="price">₹1000 – ₹1500</span></div>
+        <div class="service-card featured"><div class="sc-badge">Premium</div><div class="sc-icon"><i class="fas fa-magic"></i></div><h3>Nano-Plastia</h3><p>Advanced nano-plastia hair treatment. Charges depend on length.</p><span class="price">Starting ₹4500</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-wind"></i></div><h3>Smoothening</h3><p>Frizz-free, silky smooth hair treatment.</p><span class="price">Starting ₹3500</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-vials"></i></div><h3>Botox Hair</h3><p>Hair botox for deep repair and shine.</p><span class="price">₹300</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-star"></i></div><h3>Keratin</h3><p>Professional keratin treatment for smooth, healthy hair.</p><span class="price">₹3000 – ₹5000</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-hands"></i></div><h3>Head Massage</h3><p>Relaxing head massage for stress relief.</p><span class="price">On consultation</span></div>
+      </div>
+    </div>
+
+    <div class="service-panel" id="tab-beauty">
+      <div class="services-grid">
+        <div class="service-card featured"><div class="sc-badge">Best Seller</div><div class="sc-icon"><i class="fas fa-seedling"></i></div><h3>Lotus Facial</h3><p>Rejuvenating lotus facial for glowing skin.</p><span class="price">₹1200</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-spa"></i></div><h3>Aroma Facial</h3><p>Soothing aromatic facial for relaxation and glow.</p><span class="price">₹1000</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-apple-alt"></i></div><h3>Fruit Facial</h3><p>Natural fruit-based facial for fresh, bright skin.</p><span class="price">₹1200</span></div>
+        <div class="service-card featured"><div class="sc-badge">Premium</div><div class="sc-icon"><i class="fas fa-flask"></i></div><h3>O3+ Facial</h3><p>Advanced O3+ professional facial treatment.</p><span class="price">₹1600</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-droplet"></i></div><h3>Detain with Protein Pack</h3><p>Deep cleansing with protein pack for skin nourishment.</p><span class="price">₹500</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-flask"></i></div><h3>O3+ Detain + Protein Pack</h3><p>Premium O3+ detain with protein pack combo.</p><span class="price">₹900</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-soap"></i></div><h3>Clean Up</h3><p>Refreshing skin cleanup for clear, clean complexion.</p><span class="price">₹600</span></div>
+      </div>
+    </div>
+
+    <div class="service-panel" id="tab-nails">
+      <div class="services-grid">
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-hand-sparkles"></i></div><h3>Manicure</h3><p>Classic manicure for beautiful, healthy nails.</p><span class="price">₹600 | Advance ₹1200</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-shoe-prints"></i></div><h3>Pedicure</h3><p>Relaxing pedicure for soft, pampered feet.</p><span class="price">₹600 | Advance ₹1200</span></div>
+        <div class="service-card"><div class="sc-icon"><i class="fas fa-cut"></i></div><h3>Facials & Detain & Cleanup</h3><p>Complete skin care combo packages available.</p><span class="price">On consultation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery section" id="gallery">
+  <div class="container">
+    <div class="section-header" data-aos="fadeUp">
+      <span class="section-eyebrow">✦ My Work</span>
+      <h2 class="section-title">Portfolio <em>Gallery</em></h2>
+      <p class="section-sub">A glimpse of transformations I've created for my beautiful clients.</p>
+    </div>
+    <div class="gallery-grid" data-aos="fadeUp">
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Facial Treatment"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Facial Treatment</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80" alt="Hair Styling"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Hair Styling</span></div>
+      </div>
+      <div class="gallery-item gallery-tall" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80" alt="Makeup Art"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Bridal Makeup</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80" alt="Nail Art"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Nail Art</span></div>
+      </div>
+      <div class="gallery-item gallery-wide" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=700&q=80" alt="Hair Color"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Global Hair Color</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Skincare"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Skin Treatment</span></div>
+      </div>
+      <!-- <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1629197520677-47ef7df2e5b7?w=600&q=80" alt="Waxing"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Waxing Service</span></div>
+      </div> -->
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=600&q=80" alt="Beauty"/>
+        <div class="gallery-overlay"><i class="fas fa-expand"></i><span>Beauty Care</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-inner">
+    <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <img id="lbImg" src="" alt=""/>
+    <p id="lbCaption"></p>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section-header" data-aos="fadeUp">
+      <span class="section-eyebrow">✦ Client Love</span>
+      <h2 class="section-title">What Clients <em>Say</em></h2>
+    </div>
+    <div class="testi-grid" data-aos="fadeUp">
+      <div class="testi-card">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+        <p>"Absolutely loved my Lotus facial! My skin felt so fresh and glowing. Very professional and knows exactly what your skin needs. Highly recommended!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#f9a8d4,#ec4899)">S</div>
+          <div><strong>Simran Kaur</strong><span>Lotus Facial Client</span></div>
+        </div>
+      </div>
+      <div class="testi-card featured-testi">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Best keratin treatment I've ever had! My hair is so smooth and manageable now. The studio is clean and I felt so comfortable. Will come again!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#c4b5fd,#8b5cf6)">A</div>
+          <div><strong>Anjali Sharma</strong><span>Keratin Treatment</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+        <p>"Got my Rica wax done here and it was painless and perfect! Very hygienic environment. So gentle and caring. The pricing is also very reasonable."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#fde68a,#f59e0b)">N</div>
+          <div><strong>Neha Verma</strong><span>Rica Wax Client</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+        <p>"Came for an O3+ facial and a haircut. Both services were exceptional! Skilled and passionate about the work. My skin looks amazing. Thank you so much!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#a7f3d0,#10b981)">P</div>
+          <div><strong>Pooja Mishra</strong><span>Facial + Haircut</span></div>
+        </div>
+      </div>
+      <div class="testi-card featured-testi">
+        <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p>"Nano-Plastia treatment changed my life! No more frizz, no more bad hair days. Absolute expert. Worth every rupee. The studio ambiance is beautiful too!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#fca5a5,#ef4444)">R</div>
+          <div><strong>Riya Agarwal</strong><span>Nano-Plastia Client</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT SECTION -->
+<section class="appointment section" id="appointment">
+  <div class="container">
+    <div class="appt-grid">
+      <div class="appt-info" data-aos="fadeLeft">
+        <span class="section-eyebrow">✦ Book Your Slot</span>
+        <h2 class="section-title">Book an <em>Appointment</em></h2>
+        <p>Fill the form and we'll confirm your booking shortly. You can also reach us directly on WhatsApp!</p>
+        <div class="appt-contact">
+          <div class="ac-item"><i class="fas fa-phone"></i><span>+91 9927693604</span></div>
+          <div class="ac-item"><i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span></div>
+          <!-- <div class="ac-item"><i class="fas fa-clock"></i><span>Mon – Sat: 10 AM – 8 PM</span></div> -->
+          <div class="ac-item"><i class="fas fa-map-marker-alt"></i><span>Muradnagar , near Ghaziabad , Uttar Pradesh</span></div>
+        </div>
+        <button class="whatsapp-appt-btn" onclick="openWhatsApp()">
+          <i class="fab fa-whatsapp"></i> Book via WhatsApp
+        </button>
+      </div>
+      <div class="appt-form-wrap" data-aos="fadeRight">
+        <form class="appt-form" id="apptForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-user"></i> Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-envelope"></i> Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" required/> 
+              <span class="error-msg" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-phone"></i> Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+91 XXXXX XXXXX"/> 
+              <span class="error-msg" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-city"></i> Your City</label>
+              <input type="text" id="fcity" name="city" placeholder="Your city" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-sparkles"></i> Services Needed</label>
+            <div class="services-checkboxes">
+              <label class="cb-item"><input type="checkbox" name="services" value="Facial"/> Facial</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Waxing"/> Waxing</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Haircut"/> Haircut</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Hair Color"/> Hair Color</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Keratin"/> Keratin</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Nano-Plastia"/> Nano-Plastia</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Threading"/> Threading</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Manicure/Pedicure"/> Mani/Pedi</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Hair Spa"/> Hair Spa</label>
+              <label class="cb-item"><input type="checkbox" name="services" value="Smoothening"/> Smoothening</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><i class="fas fa-calendar"></i> Preferred Date</label>
+              <input type="date" id="fdate" name="date"/>
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-clock"></i> Preferred Time</label>
+              <select id="ftime" name="time">
+                <option value="">Select time</option>
+                <option>10:00 AM</option><option>11:00 AM</option>
+                <option>12:00 PM</option><option>01:00 PM</option>
+                <option>02:00 PM</option><option>03:00 PM</option>
+                <option>04:00 PM</option><option>05:00 PM</option>
+                <option>06:00 PM</option><option>07:00 PM</option>
+                <option>06:00 PM</option><option>07:00 PM</option>
+                <option>08:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-comment"></i> Additional Message</label>
+            <textarea id="fmsg" name="message" rows="3" placeholder="Any specific requests..."></textarea>
+          </div>
+
+          <!-- reCAPTCHA -->
+          <div class="g-recaptcha" data-sitekey="6Le9dRstAAAAADnNxDEEePbHVqBWPE1iwjyyuo6V"></div>
+
+          <button type="submit" class="btn-primary form-submit">
+            <i class="fas fa-paper-plane"></i> Send Appointment Request
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <span>Appointment request sent! We'll contact you soon. ✨</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container footer-grid"
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-white">
+          <span class="logo-icon"><i class="fas fa-spa"></i></span>
+          <span>Shiba <em>Makeup</em></span>
+        </a>
+        <p>Where beauty meets artistry. Professional beauty services tailored just for you — because you deserve to feel your most beautiful self every single day.</p>
+        <div class="footer-social">
+          <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+          <!-- <a href="#" onclick="openWhatsApp(); return false;"><i class="fab fa-whatsapp"></i></a> -->
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+          <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+          <li><a href="#appointment"><i class="fas fa-chevron-right"></i> Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Facials & Cleanup</a></li>
+          <li><a href="#services">Waxing & Threading</a></li>
+          <li><a href="#services">Keratin & Nano-Plastia</a></li>
+          <li><a href="#services">Hair Color & Highlights</a></li>
+          <li><a href="#services">Manicure & Pedicure</a></li>
+          <li><a href="#services">Hair Spa & Botox</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <div class="fc-item"><i class="fas fa-map-marker-alt"></i><span>Muradnagar , near Ghaziabad , Uttar Pradesh</span></div>
+        <div class="fc-item"><i class="fas fa-phone"></i><span>+91 9927693604</span></div>
+        <div class="fc-item"><i class="fas fa-envelope"></i><span>shibamakeup@email.com</span></div>
+        <!-- <div class="fc-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10 AM – 8 PM</span></div> -->
+        <div class="fc-item"><i class="fas fa-clock"></i><span>Sunday: By Appointment</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Shiba Makeup. All rights reserved. Made with <i class="fas fa-heart" style="color:#f9a8d4"></i> for beauty lovers.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<div class="whatsapp-float" id="waFloat" onclick="openWhatsApp()">
+  <div class="wa-pulse"></div>
+  <i class="fab fa-whatsapp"></i>
+  <div class="wa-tooltip">Chat on WhatsApp</div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="scrip.js"></script>
+</body>
+</html>
