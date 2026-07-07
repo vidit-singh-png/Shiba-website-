@@ -1847,4 +1847,70 @@ button {
 
 .ssp-tag button:hover {
   color: #fff;
+} 
+
+
+
+@media (max-width:768px) {
+  /* Container ko poori width lene do */
+  .container {
+    padding: 0 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Appointment section grid ko full width single column banao */
+  .appt-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .appt-info,
+  .appt-form-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .appt-form-wrap {
+    padding: 24px 18px;
+  }
+
+  /* Checkbox items wrap ho aur poori width fit ho */
+  .services-checkboxes {
+    width: 100%;
+  }
+
+  .cb-item {
+    flex: 1 1 auto;
+  }
+
+  /* Selected services preview bhi full width */
+  .selected-services-preview {
+    width: 100%;
+  }
+
+  * {
+    max-width: 100%;
+  }
+}
+
+@media (max-width:480px) {
+  .appt-form-wrap {
+    padding: 20px 14px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 14px;
+  }
 }
