@@ -1,4 +1,4 @@
-// ============================================
+ // ============================================
 //  SHIBA MAKEUP - main.js (Static Version)
 //  No Node.js / No Backend — Pure HTML+CSS+JS
 // ============================================
@@ -136,15 +136,21 @@ apptForm.addEventListener("submit", async (e) => {
     }
 
     // reCAPTCHA check
-  
+    const recaptchaResponse = typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
+    if (!recaptchaResponse) {
+        alert("Please verify you are not a robot! ✅");
+        return;
+    }
 
     const submitBtn = apptForm.querySelector(".form-submit");
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-    const checkedServices = [
+const checkboxServices = [
         ...apptForm.querySelectorAll('input[name="services"]:checked')
-    ].map(cb => cb.value).join(", ") || "Not specified";
+    ].map(cb => cb.value);
+
+    const checkedServices = [...new Set([...checkboxServices, ...selectedMenuServices])].join(", ") || "Not specified";
 
     const data = {
         name: document.getElementById("fname").value,
@@ -257,12 +263,15 @@ try {
 
 
     if (typeof grecaptcha !== "undefined") grecaptcha.reset();
-});
+}); 
+
 
 function showSuccess(data) {
-    formSuccess.classList.add("show");
-    apptForm.reset();
+    selectedMenuServices.clear();
+    document.querySelectorAll(".service-card.selected").forEach(c => c.classList.remove("selected"));
+    renderSelectedPreview();
 
+    formSuccess.classList.add("show");
     const waMsg = encodeURIComponent(
         `Hi! Maine aapki website par appointment form fill kiya hai.\n\n` +
         `Naam: ${data.name}\nServices: ${data.services}\nDate: ${data.date || "Flexible"}\n\nPlease confirm karein. 💄`
@@ -341,7 +350,56 @@ const statsObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 
 const heroStats = document.querySelector(".hero-stats");
-if (heroStats) statsObserver.observe(heroStats);
+if (heroStats) statsObserver.observe(heroStats); 
+
+
+
+
+/* ---------- SERVICE CARD SELECTION (Click to Add to Booking) ---------- */
+const selectedMenuServices = new Set();
+const selectedPreview = document.getElementById("selectedServicesPreview");
+
+function getCardName(card) {
+    return card.querySelector("h3").textContent.trim();
+}
+
+function renderSelectedPreview() {
+    if (selectedMenuServices.size === 0) {
+        selectedPreview.innerHTML = '<span class="ssp-empty">Upar kisi bhi service card par click karo 👆</span>';
+        return;
+    }
+    selectedPreview.innerHTML = "";
+    selectedMenuServices.forEach(name => {
+        const tag = document.createElement("span");
+        tag.className = "ssp-tag";
+        tag.innerHTML = `${name} <button type="button" aria-label="Remove">✕</button>`;
+        tag.querySelector("button").addEventListener("click", () => {
+            selectedMenuServices.delete(name);
+            document.querySelectorAll(".service-card").forEach(card => {
+                if (getCardName(card) === name) card.classList.remove("selected");
+            });
+            renderSelectedPreview();
+        });
+        selectedPreview.appendChild(tag);
+    });
+}
+
+document.querySelectorAll(".service-card").forEach(card => {
+    card.addEventListener("click", () => {
+        const name = getCardName(card);
+        if (selectedMenuServices.has(name)) {
+            selectedMenuServices.delete(name);
+            card.classList.remove("selected");
+        } else {
+            selectedMenuServices.add(name);
+            card.classList.add("selected");
+        }
+        renderSelectedPreview();
+    });
+});
+
+
+
 
 /* ---------- SERVICE CARD HOVER EFFECT ---------- */
 document.querySelectorAll(".service-card").forEach(card => {
