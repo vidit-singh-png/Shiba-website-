@@ -136,11 +136,7 @@ apptForm.addEventListener("submit", async (e) => {
     }
 
     // reCAPTCHA check
-    const recaptchaResponse = typeof grecaptcha !== "undefined" ? grecaptcha.getResponse() : "";
-    if (!recaptchaResponse) {
-        alert("Please verify you are not a robot! ✅");
-        return;
-    }
+
 
     const submitBtn = apptForm.querySelector(".form-submit");
     submitBtn.disabled = true;
@@ -262,7 +258,7 @@ try {
 
 
 
-    if (typeof grecaptcha !== "undefined") grecaptcha.reset();
+  
 }); 
 
 
